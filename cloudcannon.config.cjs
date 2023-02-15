@@ -27,6 +27,22 @@ module.exports = {
                 }
             }
         },
+        collections: {
+            path: "content/collections",
+            url: '/collections/[slug]',
+            'output': true,
+            icon: 'wysiwyg',
+            _enabled_editors: [
+                "visual"
+            ],
+            schemas: {
+                page:
+                {
+                    name: 'New Page',
+                    path: "schemas/page.md"
+                }
+            }
+        },
         blog: {
             path: "content/posts",
             'output': true,
